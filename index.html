@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Site Name -->
+    <title>SK_ECOMMERCE || SURESH_KUMAR_SINGH</title>
+
+    <!-- Site Icon -->
+    <link rel="icon" href="assets/images/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap_min.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Other CSS -->
+    <link rel="stylesheet" href="assets/css/yogesh.css">
+
+    <!-- Include AOS CSS from CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+
+    <link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet" />
+
+    <style>
+        .navbar-toggler-icon {
+            display: inline-block;
+            background: url('/assets/images/triple_line.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .navbar{
+            li a{
+                color:white !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <nav class="navbar navbar-expand-lg navbar-light desktop_nav py-0" style="background:black;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center h4 fw-bold logo_img" href="index.html">
+                <img src="assets/images/Bharat_gyan_logo.png" alt="" class="me-2 ">
+                <strong class="logo_text text-white">Sk-Ecommerce</strong></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 mb-2 justify-content-end mb-lg-0 d-flex align-items-center gap-3">
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="about_us.html">About us</a>
+                    </li>
+                    <li class="nav-item p-2 dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Men`s wear
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="photo_gallery.html">Photo Gallery</a></li>
+                            <li><a class="dropdown-item" href="video_gallery.html">Video Gallery</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item p-2">
+                        <a class="nav-link " aria-current="page" href="event.html">Women`s wear</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link " aria-current="page" href="blog.html">Contact</a>
+                    </li>
+                    <li class="nav-item btn w-25 my-0">
+                        <a class="nav-link " aria-current="page" href="login.html">
+                            <i class="fa fa-cart-arrow-down fs-5 p-2 text-black bg-opacity-50" style="background: #17c3a2;"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </div>
+        </div>
+    </nav>
+    <!-- Header End -->
+
+    <!-- Main Slider section    -->
+    <section class="p-0">
+        <div id="carousel_main" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active bg-body-secondary ">
+                    <!-- <img src="assets/images/slide1.png" class="d-block w-100" alt="..."> -->
+                    <div class="w-100 hero_slider_bg" style="background:url('https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/banner1.jpg');">
+                        <div
+                            class="container h-100 d-flex gap-md-3 align-items-cente flex-column justify-content-center">
+                            <div>
+                                <h1 class="text-white text-center textLineHight">THE BIGGEST <strong class="text-primary">SALE</strong></h1>
+                                <p class="gold-text text-center mb-3 textLineHight">Special for today</p>
+                            </div>
+                            <div class="gap-md-4 gap-2 d-flex justify-content-center">
+                                <a href="#" class="btn d-flex align-items-center  text-dark text-capitalize">shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 hero_slider_bg" style="background:url('https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/banner3.jpg');">
+                        <div
+                            class="container  h-100 d-flex gap-md-3 align-items-cente flex-column justify-content-center">
+                            <div>
+                                <h1 class="text-white text-center textLineHight ">SUMMER <strong class="text-primary">COLLECTION</strong></h1>
+                                <p class="gold-text text-center textLineHight">Special for today</p>
+                            </div>
+                            <div class="gap-md-4 gap-2 d-flex justify-content-center">
+                                <a href="#" class="btn d-flex align-items-center  text-dark text-capitalize">shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 hero_slider_bg" style="background:url('https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/banner2.jpg');">
+                        <div
+                            class="container  h-100 d-flex gap-md-3 align-items-cente flex-column justify-content-center">
+                            <div>
+                                <h1 class="text-white text-center textLineHight ">THE BIGGEST <strong class="text-primary">SALE</strong></h1>
+                                <p class="gold-text text-center textLineHight">Special for today</p>
+                            </div>
+                            <div class="gap-md-4 gap-2 d-flex justify-content-center">
+                                <a href="#" class="btn d-flex align-items-center  text-dark text-capitalize">shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 hero_slider_bg" style="background:url('https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/banner4.jpg');">
+                        <div
+                            class="container  h-100 d-flex gap-md-3 align-items-cente flex-column justify-content-center">
+                            <div>
+                                <h1 class="text-white text-center ">SUMMER <strong class="text-primary">COLLECTION</strong></h1>
+                                <p class="gold-text text-center">Special for today</p>
+                            </div>
+                            <div class="gap-md-4 gap-2 d-flex justify-content-center">
+                                <a href="#" class="btn d-flex align-items-center  text-dark text-capitalize">shop now</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 hero_slider_bg" style="background:url('https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/bottom1.jpg');">
+                        <div
+                            class="container  h-100 d-flex gap-md-3 align-items-cente flex-column justify-content-center">
+                            <div>
+                                <h1 class="text-white text-center ">THE BIGGEST <strong class="text-primary">SALE</strong></h1>
+                                <p class="gold-text text-center">Special for today</p>
+                            </div>
+                            <div class="gap-md-4 gap-2 d-flex justify-content-center">
+                                <a href="#" class="btn d-flex align-items-center  text-dark text-capitalize">shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel_main"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel_main"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Main Slider section  end  -->
+
+
+    <!-- Tab Section Start -->
+    <section class="pt-md-2 pt-0 know_About d-none">
+        <div class="container">
+            <div class="row gy-3">
+                <div>
+                    <h4 class="mb-4 text-uppercase d-flex align-items-center text-nowrap gap-3">Know About us <p
+                            class="bg-dark m-0 heading_line"></p>
+                    </h4>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <ul class="nav nav-pills mb-3 d-flex gap-md-3 gap-1 flex-nowrap overflow-auto " id="pills-tab"
+                            role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-pill active" id="pills-About-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-About" type="button" role="tab" aria-controls="pills-About"
+                                    aria-selected="true">About</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-pill" id="pills-Mission-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Mission" type="button" role="tab"
+                                    aria-controls="pills-Mission" aria-selected="false">Mission</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-pill" id="pills-Vision-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Vision" type="button" role="tab" aria-controls="pills-Vision"
+                                    aria-selected="false">Vision</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-pill" id="pills-Value-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Value" type="button" role="tab" aria-controls="pills-Value"
+                                    aria-selected="false">Value</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-About" role="tabpanel"
+                                aria-labelledby="pills-About-tab">"The Voluntary Organizations (VOs)/ Non-Governmental
+                                Organizations (NGOs) etc. play active role in the development of the nation by
+                                supplementing the efforts of the Government. NGO DARPAN is maintained by NITI Aayog to
+                                enable Non-Government Organizations (NGOs), Not for Profit Organizations (NPOs),
+                                Voluntary Organizations (VOs), Civil Society Organizations (CSOs), Not for Profit
+                                Companies, Charity Organizations, registered societies, Trusts, etc. to sign up on NGO
+                                Darpan portal.</div>
+                            <div class="tab-pane fade" id="pills-Mission" role="tabpanel"
+                                aria-labelledby="pills-Mission-tab">2 _ "The Voluntary Organizations (VOs)/
+                                Non-Governmental Organizations (NGOs) etc. play active role in the development of the
+                                nation by supplementing the efforts of the Government. NGO DARPAN is maintained by NITI
+                                Aayog to enable Non-Government Organizations (NGOs), Not for Profit Organizations
+                                (NPOs), Voluntary Organizations (VOs), Civil Society Organizations (CSOs), Not for
+                                Profit Companies, Charity Organizations, registered societies, Trusts, etc. to sign up
+                                on NGO Darpan portal.</div>
+                            <div class="tab-pane fade" id="pills-Vision" role="tabpanel"
+                                aria-labelledby="pills-Vision-tab">3_ "The Voluntary Organizations (VOs)/
+                                Non-Governmental Organizations (NGOs) etc. play active role in the development of the
+                                nation by supplementing the efforts of the Government. NGO DARPAN is maintained by NITI
+                                Aayog to enable Non-Government Organizations (NGOs), Not for Profit Organizations
+                                (NPOs), Voluntary Organizations (VOs), Civil Society Organizations (CSOs), Not for
+                                Profit Companies, Charity Organizations, registered societies, Trusts, etc. to sign up
+                                on NGO Darpan portal. </div>
+                            <div class="tab-pane fade" id="pills-Value" role="tabpanel"
+                                aria-labelledby="pills-Value-tab">4_ "The Voluntary Organizations (VOs)/
+                                Non-Governmental Organizations (NGOs) etc. play active role in the development of the
+                                nation by supplementing the efforts of the Government. NGO DARPAN is maintained by NITI
+                                Aayog to enable Non-Government Organizations (NGOs), Not for Profit Organizations
+                                (NPOs), Voluntary Organizations (VOs), Civil Society Organizations (CSOs), Not for
+                                Profit Companies, Charity Organizations, registered societies, Trusts, etc. to sign up
+                                on NGO Darpan portal. </div>
+                        </div>
+                        <div class="w-25 btn-gradient-border my-4" style="padding: 2px;">
+                            <button class="w-100 btn text-dark">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <img src="assets/images/dbl_img.png" alt="" class="w-100" style="aspect-ratio:4/3;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tab Section End -->
+
+
+    <!-- Two Div Section Start -->
+    <section class="pt-md-4 pt-3">
+        <div class="container">
+            <div class="row justify-content-between align-items-center gy-md-4">
+                <div class="col-md-6 px-md-4">
+                    <div class="bg_hover p-md-5 p-3" style="background: url('https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/bottom1.jpg'); ">
+                        <!-- <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/bottom1.jpg" alt="" class="w-100" style=""> -->
+                        <div class="hidden_div d-flex justify-content-end align-items-center py-5">
+                            <div class="text-end">
+                                <h3 class="text-white"><span class="text_f">F</span>ALL AHEAD</h3>
+                                <p class="gold-text text-white m-0">New Arrivals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 px-md-4">
+                    <div class="bg_hover p-md-5 p-3" style="background: url('https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/bottom2.jpg'); ">
+                        <!-- <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/bottom1.jpg" alt="" class="w-100" style=""> -->
+                        <div class="hidden_div d-flex justify-content-end align-items-center py-5">
+                            <div class="text-end">
+                                <h3 class="text-white"><span class="text_f">F</span>ALL AHEAD</h3>
+                                <p class="gold-text text-white m-0">New Arrivals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Two Div Section End -->
+
+    <!-- 50% SAvE Start -->
+    <section class="">
+       <div class="container-fluid px-0">
+        <div class="row">
+            <div class="col-md-6 px-md-0">
+                <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/mid.jpg" class="w-100" alt="">
+            </div>
+            <div class="col-md-6 px-md-0 bg-primary d-flex align-items-center">
+               <div class="me-md-5 bg-light p-md-5 p-3">
+                <div>
+                    <h4>SAVE UP TO 50% IN THIS WEEK</h4>
+                    <p>Suspendisse varius turpis efficitur erat laoreet dapibus. Mauris sollicitudin scelerisque commodo.Nunc dapibus mauris sed metus finibus posuere.</p>
+                   </div>
+                   <div class="row">
+                        <div class="col-md-4 text-center">
+                            <i class="fa fa-user fs-4"></i>
+                            <h5 class="">CUSTOMERS</h5>
+                            <h4 class="m-0">653</h4>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <i class="fa fa-calendar fs-4"></i>
+                            <h5 class="">EVENTS</h5>
+                            <h4 class="m-0">823</h4>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <i class="fa fa-product-hunt fs-4"></i>
+                            <h5 class="">AWARDS</h5>
+                            <h4 class="m-0">45</h4>
+                        </div>
+                   </div>
+               </div>
+                <!-- <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/mid.jpg" alt=""> -->
+            </div>
+        </div>
+       </div>
+    </section>
+    <!-- 50% SAvE End -->
+
+    <!-- Two Div Section Start -->
+    <section class="pt-md-4 pt-1">
+        <div class="container-fluid px-0 px-1">
+            <div class="row justify-content-between align-items-center gy-md-4">
+                <div class="col-md-6 px-md-0">
+                    <div class="bg_hover d-flex justify-content-center align-items-center" style="background: url('https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/bot_1.jpg'); ">
+                                <h3 class="text-white">Flat <span class="text-primary fw-bold">50%</span> offer</h3>
+                    </div>
+                </div>
+                <div class="col-md-6 px-md-0">
+                    <div class="bg_hover d-flex justify-content-center align-items-center" style="background: url('https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/bot_2.jpg'); ">
+                        <h3 class="text-white">Flat <span class="text-primary fw-bold">50%</span> offer</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Two Div Section End -->
+
+        <!-- Our Mission Section End -->
+    <section class="pt-0 pt-md-3 our_Mission">
+            <div class="">
+                <div class="w-100 " style="background:url('https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/143933984/web/images/banner3.jpg'); aspect-ratio:4/1; background-attachment: fixed;">
+                    <div
+                        class="container  h-100 d-flex gap-md-3 align-items-cente flex-column justify-content-center">
+                        <div>
+                            <h1 class="text-white text-center ">We Offer Flat <strong class="text-primary">40%</strong> Discount </h1>
+                        </div>
+                        <div class="gap-md-4 gap-2 d-flex justify-content-center">
+                            <a href="#" class="btn d-flex align-items-center  text-dark text-capitalize">shop now</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Mission Section End -->
+
+    <!-- Footer Section Start -->
+    <section class="pb-0">
+        <footer class="footer pt-4 pb-4" style="background:#111111;">
+            <div class="container-lg px-md-5 px-lg-1">
+                <div class="row justify-content-between">
+                    <div class=" mt-4 col-lg-4 text-center text-sm-start">
+                        <div class="social">
+                            <!-- <h6 class="footer-heading text-uppercase text-white fw-bold">Social</h6> -->
+                            <a class="navbar-brand d-flex align-items-center h4 fw-bold" href="index.html">
+                                <img src="assets/images/Bharat_gyan_logo.png" alt="" class="me-3 mb-md-3 rounded-circle"
+                                    style="width:50px; aspect-ratio:1/1;">
+                                <strong class="logo_text text-white text-uppercase">SK_ECOMMERCE</strong></a>
+                            <p class="text-white m-0 p_width" style="font-weight: 400;
+                            line-height: 26px;
+                            font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                                varius enim in eros elementum tristique</p>
+                            <ul class="list-inline mt-md-5 mt-4 d-flex gap-4">
+                                <li class="list-inline-item"><a href="#" class=" mb-2">
+                                        <i class="fa-brands text-white fs-4 fa-linkedin"></i>
+                                    </a></li>
+                                <li class="list-inline-item"><a href="#" class=" mb-2"><i
+                                            class="fa-brands text-white fs-4 fa-facebook-f"></i></i></a></li>
+                                <li class="list-inline-item"><a href="#" class=" mb-2"><i
+                                            class="fa-brands text-white fs-4 fa-x-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item"><a href="#" class=" mb-2">
+                                        <i class="fa-brands text-white fs-4 fa-instagram"></i>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4  mt-4 col-lg-2">
+                        <div class="information">
+                            <h6 class="footer-heading text-uppercase text-white fw-bold">OUR INFORMATION</h6>
+                            <ul class="list-unstyled footer-link mt-md-4 footer_text">
+                                <li class="mb-1"><a href="event.html" class="text-white text-decoration-none">Home</a>
+                                </li>
+                                <li class="mb-1"><a href="Men's Wear.html"
+                                        class="text-white text-decoration-none">Men's Wear</a></li>
+                                <li class="mb-1"><a href="#" class="text-white text-decoration-none">Women's wear</a></li>
+                                <li class=""><a href="contact-us.html"
+                                        class="text-white text-decoration-none">About</a></li>
+                                <li class=""><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mt-4 col-lg-2 tt">
+                        <div class="resources">
+                            <h6 class="footer-heading text-uppercase text-white fw-bold">STORE INFORMATION</h6>
+                            <ul class="list-unstyled footer-link mt-md-4 footer_text">
+                                <li class=""><a href="login.html" class="text-white text-decoration-none">Login</a></li>
+                                <li class="mb-1"><a href="term&condition.html"
+                                        class="text-white text-decoration-none">Term & Condition </a></li>
+                                <li class="mb-1"><a href="privacy_policy.html"
+                                        class="text-white text-decoration-none">Privacy Policy</a></li>
+                                <li class="mb-1"><a href="contact-us.html" class="text-white text-decoration-none">Help center</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mt-4 col-lg-3 tt">
+                        <div class="resources">
+                            <h6 class="footer-heading text-uppercase text-white fw-bold">STORE INFORMATION</h6>
+                            <ul class="list-unstyled footer-link mt-md-4 footer_text">
+                                <li class=""><a href="#" class="text-white text-decoration-none">Phone Number</a></li>
+                                <li class=""><a href="https://wa.me/9753102497" target="_blank" class="text-white text-decoration-none">+91 9753102497</a></li>
+                                <li class=""><a href="#" class="text-white text-decoration-none">Email Address</a></li>
+                                <li class=""><a href="mailto:ramnivasrajput608@gmail.com" class="text-white text-decoration-none">ramnivasrajput608@gmail.com</a></li>
+                                <li class=""><a href="3" class="text-white text-decoration-none">Location</a></li>
+                                <li class=""><a href="#" class="text-white text-decoration-none">Broome St, NY 10002,California, USA.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class=" mt-4  col-lg-3 col-md-4">
+                        <div class="contact">
+                            <h6 class="footer-heading text-uppercase text-white fw-bold">Location</h6>
+                            <a href="tel:+" class="text-white mb-3 text-decoration-none d-block" style="color: #7F7F7F !important;
+                            font-weight: 500;
+                            line-height: 28px;
+                            font-size: 16px;"> Visit here.</a>
+                            <div>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.791973666661!2d77.46221377532066!3d23.25065587901457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43e977e6e5c9%3A0x12209b588769e506!2sSatya%20Kabir%20E-solutions%20Private%20Limited%20-%20Bhopal!5e0!3m2!1sen!2sin!4v1711089280514!5m2!1sen!2sin"
+                                    width="100%" height="" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade" class="rounded"></iframe>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="container-fluid">
+                <hr class="mx-md-5 mx-1 my-4" style="background: white; opacity: 0.9; height: 1.5px;">
+            </div>
+            <div class="text-center mx-3  mt-4 p-1">
+                <p class="mb-0 " style="color:#7F7F7F;">Copyright © 2024 pawan_design | All Rights Reserved | <a
+                        href="term&condition.html" style="color:#7F7F7F;">Terms and Conditions</a> | <a
+                        href="privacy_policy.html" style="color:#7F7F7F;">Privacy Policy</a> </p>
+            </div>
+        </footer>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Bootstrap JS link  -->
+    <script src="assets/css/bootstrap_js.js"></script>
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Font Awsome CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Main JS  -->
+    <script src="assets/js/index.js"></script>
+
+    <!-- Include AOS JavaScript from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+
+    <script>
+        const input = document.getElementById("file-input");
+        const image = document.getElementById("img-preview");
+
+        input.addEventListener("change", (e) => {
+            if (e.target.files.length) {
+                const src = URL.createObjectURL(e.target.files[0]);
+                image.src = src;
+            }
+        });
+
+    </script>
+
+</body>
+
+
+
+</html>
