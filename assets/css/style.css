@@ -1065,6 +1065,8 @@ input[type="file"] {
   transform: translate(10px);
 }
 
+/* Line height css  */
+
 @media (max-width:768px) {
   .textLineHight{
     line-height: 24px;
