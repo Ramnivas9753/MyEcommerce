@@ -442,19 +442,6 @@ svg {
   width: 100%;
 } */
 
-section,
-.section {
-  padding-top: 3.5rem;
-  padding-bottom: 2.8rem;
-}
-
-@media (max-width: 767.98px) {
-  section {
-    padding-top: 4rem;
-    padding-bottom: 3rem;
-  }
-}
-
 thead,
 tbody,
 tfoot,
@@ -526,14 +513,15 @@ textarea {
 }
 
 Section {
-  padding-top: 2.8rem;
-  padding-bottom: 2rem;
+  /* padding-top: 2.8rem; */
+  padding-bottom: 3rem;
 }
 
 @media (max-width: 767.98px) {
   Section {
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
+    /* padding-top: 2rem; */
+    padding-bottom: 2rem;
+    /* padding-bottom: 1.5rem; */
   }
 
   .main-small-banner img {
@@ -774,13 +762,18 @@ select {
 }
 
 #pills-tab .active {
-  background: #E13333;
-  padding: 2px 15px;
+  background: #fc636b;
+  color:white;
+}
+#pills-tab button {
+  background: #fc636b37;
+  color:black;
+  font-weight: bold;
 }
 
 #pills-tab button {
-  background: #FFFFFF;
-  padding: 2px 15px;
+  /* background: #FFFFFF; */
+  /* padding: 2px 15px; */
 }
 
 .footer_text li a {
@@ -1084,4 +1077,64 @@ input[type="file"] {
   .textLineHight{
     line-height: 24px;
   }
+}
+
+.bg_ratio{
+  aspect-ratio:4/1;
+}
+
+@media (max-width:768px) {
+  .bg_ratio{
+    aspect-ratio:16/9;
+  }
+}
+
+.cardShadow{
+  box-shadow: 0px 0px 15px 0px #D6D6D6;
+  padding: 25px;
+}
+
+.cardShadow h6{
+  color:#fc636b !important;
+}
+.cardShadow button{
+  padding: 5px;
+}
+
+.cardShadow .hidden-btn{
+  position: absolute;
+  top: -41px;
+  left: 0;
+  background:transparent !important;
+  
+}
+.cardShadow:hover .hidden-btn{
+  /* top: 248px; */
+  top: 85%;
+  transition: 1s;
+  background:#000 !important;
+}
+
+.cardImg:hover img{
+  transform: rotateY(360deg);
+  transition: 2s;
+}
+
+.cardImg{
+  aspect-ratio:4/4;
+  margin-top: 18px;
+}
+.cardImg img{
+  aspect-ratio:4/4;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cardHover:hover{
+  background:#2fdab8 !important;
+  transition: 1s; 
+}
+
+.tabSection ::-webkit-scrollbar{
+  display: none !important;
 }
