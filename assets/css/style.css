@@ -584,6 +584,19 @@ select {
   }
 }
 
+.navbar-toggler-icon {
+  display: inline-block;
+  background: url('/assets/images/triple_line.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.navbar{
+  li a{
+      color:white !important;
+  }
+}
+
 
 
 /* .btn-border:hover,
