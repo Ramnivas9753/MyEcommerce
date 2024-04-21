@@ -397,7 +397,7 @@ input::placeholder, textarea::placeholder {
 
 
 input{
-  color: white !important;
+  color: gray !important;
 }
 
 input:focus,
@@ -576,6 +576,16 @@ select {
 
   .desktop_nav .btn-gradient-border {
     min-width: 100px !important;
+  }
+}
+
+.cartWidth{
+  width: 25%;
+}
+
+@media (max-width:768px) {
+  .cartWidth{
+    width: 100%;
   }
 }
 
