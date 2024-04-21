@@ -38,53 +38,289 @@
 
 <body>
 
-    <!-- Header Start -->
-    <nav class="navbar navbar-expand-lg navbar-light desktop_nav py-0" style="background:black;">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center h4 fw-bold logo_img" href="index.html">
-                <img src="assets/images/Bharat_gyan_logo.png" alt="" class="me-2 ">
-                <strong class="logo_text text-white">MY-Ecommerce</strong></a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav w-100 mb-2 justify-content-end mb-lg-0 d-flex align-items-center gap-3">
-                    <li class="nav-item p-2">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link" href="about_us.html">About us</a>
-                    </li>
-                    <li class="nav-item p-2 dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Men`s wear
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="photo_gallery.html">Photo Gallery</a></li>
-                            <li><a class="dropdown-item" href="video_gallery.html">Video Gallery</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item p-2">
-                        <a class="nav-link " aria-current="page" href="event.html">Women`s wear</a>
-                    </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link " aria-current="page" href="blog.html">Contact</a>
-                    </li>
-                    <li class="nav-item btn w-25 my-0">
-                        <a class="nav-link " aria-current="page" href="login.html">
-                            <i class="fa fa-cart-arrow-down fs-5 p-2 text-black bg-opacity-50"
-                                style="background: #17c3a2;"></i>
-                        </a>
-                    </li>
-                </ul>
-                <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+        <!-- SignInModal -->
+    <div class="modal fade" id="SignInModal" aria-hidden="true" aria-labelledby="SignInModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content rounded">
+                <div class="modal-header">
+                    <h4 class="fw-bold m-0 px-3" style="word-break: break-all;">SIGN IN <strong
+                            class="text-primary fw-normal">NOW</strong></h4>
+                    <button type="button" class="btn-close small opacity-100" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form action="#">
+                                <div class="">
+                                    <div class="mt-2 mb-4">
+                                        <input type="text" placeholder="Name"
+                                            class="form-control rounded-0 bg-transparent border-bottom border-0 ">
+                                    </div>
+                                    <div class="mt-2 mb-4">
+                                        <input type="Email" placeholder="Email"
+                                            class="form-control rounded-0 bg-transparent border-bottom border-0 ">
+                                    </div>
+                                    <div class="mt-2 mb-4">
+                                        <button class="btn btn-primary px-md-4 fw-semibold" type="submit">SIGN IN</button>
+                                    </div>
+                                    <div class="mt-2 mb-3">
+                                        <div class="d-flex gap-xl-3 gap-2 gap-md-1 align-items-md-center">
+                                            <a href="#" class="text-white px-2 py-1 border" style="background: #3b5998;"><i
+                                                    class="fab fa-facebook-f px-1"></i></a>
+                                            <a href="#" class="text-white px-2 py-1 border" style="background:#1DA1F2;"><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a href="#" class="text-white px-2 py-1 border" style="background:#DD2A7B;"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a href="#" class="text-white px-2 py-1 border" style="background:#0077b5;"><i
+                                                    class="fab fa-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2 mb-4">
+                                        <a class="text-reset text-decoration-none small" data-bs-toggle="modal"
+                                            href="#SignUpModal" style="cursor: pointer;">Don't have an account?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-4 d-md-block d-none">
+                            <img src="assets/images/formbg.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
+    <!-- SignInModal End-->
+
+    <!-- SignUpModal -->
+    <div class="modal fade" id="SignUpModal" aria-hidden="true" aria-labelledby="SignUpModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content rounded">
+                <div class="modal-header">
+                    <h4 class="fw-bold m-0 px-3" style="word-break: break-all;">SIGN UP <strong
+                            class="text-primary fw-normal">NOW</strong></h4>
+                    <button type="button" class="btn-close small opacity-100" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form action="#">
+                                <div class="">
+                                    <div class="mt-2 mb-4">
+                                        <input type="text" placeholder="Name"
+                                            class="form-control rounded-0 bg-transparent border-bottom border-0 ">
+                                    </div>
+                                    <div class="mt-2 mb-4">
+                                        <input type="Email" placeholder="Email"
+                                            class="form-control rounded-0 bg-transparent border-bottom border-0 ">
+                                    </div>
+                                    <div class="mt-2 mb-4">
+                                        <input type="Password" placeholder="Password"
+                                            class="form-control rounded-0 bg-transparent border-bottom border-0 ">
+                                    </div>
+                                    <div class="mt-2 mb-4">
+                                        <input type="Password" placeholder="Confirm Password"
+                                            class="form-control rounded-0 bg-transparent border-bottom border-0 ">
+                                    </div>
+                                    <div class="mt-2 mb-4">
+                                        <button class="btn btn-primary px-md-4 fw-semibold" type="submit">SIGN UP</button>
+                                    </div>
+                                    <div class="mt-2 mb-3">
+                                        <div class="d-flex gap-xl-3 gap-2 gap-md-1 align-items-md-center">
+                                            <a href="#" class="text-white px-2 py-1 border" style="background: #3b5998;"><i
+                                                    class="fab fa-facebook-f px-1"></i></a>
+                                            <a href="#" class="text-white px-2 py-1 border" style="background:#1DA1F2;"><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a href="#" class="text-white px-2 py-1 border" style="background:#DD2A7B;"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a href="#" class="text-white px-2 py-1 border" style="background:#0077b5;"><i
+                                                    class="fab fa-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2 mb-4">
+                                        <a class="text-reset text-decoration-none small" data-bs-toggle="modal"
+                                            href="#SignUpModal" style="cursor: pointer;">By clicking register, I agree to your terms</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-4 d-md-block d-none">
+                            <img src="assets/images/formbg.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SignUpModal End-->
+
+    <!-- cartModal -->
+    <div class="modal fade" id="cartModl" aria-hidden="true" aria-labelledby="cartModlLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded">
+                <div class="modal-header">
+                    <p class="modal-title m-0 fw-bold small" id="cartModlLabel">Your shopping cart is empty
+                    </p>
+                    <button type="button" class="btn-close small opacity-100" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="border p-2 pt-0">
+                        <div class="border p-2 bg-light my-2" style="box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2)">
+                            <div class="d-sm-flex justify-content-between align-items-start">
+                                <div>
+                                    <p class="m-0 small">Dark Blue Track Pants</p>
+                                    <p class="m-0 small text-secondary">Discount: $1.00</p>
+                                </div>
+                                <div class="d-flex justify-content-around gap-5 align-items-center">
+                                    <p class="m-0 border px-3 py-0 small rounded">1</p>
+                                    <p style="cursor: pointer;"
+                                        class="m-0 fa fa-close text-bg-info px-2 py-1 rounded-1 text-white small">
+                                    </p>
+                                    <p class="m-0">$29.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border p-2 bg-light my-2" style="box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2)">
+                            <div class="d-sm-flex justify-content-between align-items-start">
+                                <div>
+                                    <p class="m-0 small">Dark Blue Track Pants</p>
+                                    <p class="m-0 small text-secondary">Discount: $1.00</p>
+                                </div>
+                                <div class="d-flex justify-content-around gap-5 align-items-center">
+                                    <p class="m-0 border px-3 py-0 small rounded">1</p>
+                                    <p style="cursor: pointer;"
+                                        class="m-0 fa fa-close text-bg-info px-2 py-1 rounded-1 text-white small">
+                                    </p>
+                                    <p class="m-0">$29.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="mb-0 mt-3 text-end px-2">Subtotal: $59.98 USD</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cartModal End-->
+    <!-- Header Start -->
+    <header>
+
+        <div class="container-fluid bg-black">
+            <div class="row justify-content-center py-1">
+                <div class="col-xl-2 col-md col-sm-6 py-1 border-secondary border-0 border-end">
+                    <div class="text-white text-center" data-bs-toggle="modal" href="#SignInModal"
+                        style="cursor: pointer;">
+                        <i class="fa fa-lock text-primary small px-1"></i>
+                        <span class="small">Sign In</span>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md col-sm-6 py-1 border-secondary border-0 border-end">
+                    <div class="text-white text-center" data-bs-toggle="modal" href="#SignUpModal"
+                        style="cursor: pointer;">
+                        <i class="fa fa-lock text-primary small px-1"></i>
+                        <span class="small">Sign Up</span>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md col-sm-6 py-1 border-secondary border-0 border-end">
+                    <div class="text-white text-center">
+                        <i class="fa fa-phone text-primary small px-1"></i>
+                        <span class="small">Call : 01234567898</span>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md col-sm-6 py-1 border-secondary border-0 border-end">
+                    <div class="text-white text-center">
+                        <i class="fa fa-envelope text-primary small px-1"></i>
+                        <span class="small">info@example.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="container-fluid bg-light py-2 py-md-3">
+                <div class="row align-items-center justify-content-around gy-3">
+                    <div class="d-flex gap-1 col-md-4 ">
+                        <input type="text" placeholder="Search Here.."
+                            class="form-control border-secondary-subtle rounded-0">
+                        <a href="#" class="btn btn-dark">
+                            <i class="fa fa-search fw-bold"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-3 text-center ">
+                        <!-- Logo -->
+                        <img src="assets/images/Bharat_gyan_logo.png" alt="Logo" height="50" class="me-2">
+                        <!-- <img src="assets/images/Bharat_gyan_logo.png" alt="" class="me-2 "> -->
+                        <strong class="logo_text text-dark">SK <strong class="text-primary">SINGH</strong></strong></a>
+                    </div>
+                    <div
+                        class="col-md-3 text-right justify-content-center d-flex gap-xl-3 gap-2 gap-md-1 align-items-md-center">
+                        <!-- Social Media Icons -->
+                        <p class="m-0 text-white d-xxl-flex d-none">Share On :</p>
+                        <a href="#" class="text-white px-2 py-1" style="background: #3b5998;"><i
+                                class="fab fa-facebook-f px-1"></i></a>
+                        <a href="#" class="text-white px-2 py-1" style="background:#1DA1F2;"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white px-2 py-1" style="background:#DD2A7B;"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white px-2 py-1" style="background:#0077b5;"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light desktop_nav py-0" style="background:black;">
+            <div class="container-xl px-xl-0 px-xl-4 px-md-4">
+                <a class="navbar-brand d-flex align-items-center h4 fw-bold logo_img" href="index.html">
+                    <img src="assets/images/Bharat_gyan_logo.png" alt="" class="me-3 ">
+                    <strong class="logo_text text-white">SK <span class="text-primary">Ecommerce</span></strong></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 mb-2 justify-content-end mb-lg-0 d-flex align-items-center gap-3">
+                        <li class="nav-item p-2">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="about_us.html">About us</a>
+                        </li>
+                        <li class="nav-item p-2 dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Men`s wear
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="photo_gallery.html">Photo Gallery</a></li>
+                                <li><a class="dropdown-item" href="video_gallery.html">Video Gallery</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item p-2">
+                            <a class="nav-link " aria-current="page" href="event.html">Women`s wear</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link " aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item btn cartWidth my-0" data-bs-toggle="modal" href="#cartModl">
+                            <a class="nav-link " aria-current="page">
+                                <i class="fa fa-cart-arrow-down fs-5 p-2 text-black bg-opacity-50"
+                                    style="background: #17c3a2;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- Header End -->
 
     <!-- commanBanner section    -->
@@ -194,33 +430,35 @@
                 </div>
 
                 <div class="col-md-6 bg-black">
-                    <div class="py-5">
-                        <div class="my-3 px-md-5 px-3">
-                            <h3 class="normalLetter text-white fw-bold" style="word-break: break-all;">CONTACT <strong
-                                    class="text-primary fw-normal">FORM</strong></h3>
+                    <form action="#">
+                        <div class="py-5">
+                            <div class="my-3 px-md-5 px-3">
+                                <h3 class="normalLetter text-white fw-bold" style="word-break: break-all;">CONTACT <strong
+                                        class="text-primary fw-normal">FORM</strong></h3>
+                            </div>
+                            <div class="mt-3 mb-4 px-md-5 px-3">
+                                <input type="text" placeholder="Name"
+                                    class="form-control rounded-0 bg-transparent border-bottom border-0 border-light">
+                            </div>
+                            <div class="mt-3 mb-4 px-md-5 px-3">
+                                <input type="Email" placeholder="Email"
+                                    class="form-control rounded-0 bg-transparent border-bottom border-0 border-light">
+                            </div>
+                            <div class="mt-3 mb-4 px-md-5 px-3">
+                                <input type="text" placeholder="Subject"
+                                    class="form-control rounded-0 bg-transparent border-bottom border-0 border-light">
+                            </div>
+                            <div class="mt-3 mb-4 px-md-5 px-3">
+                                <textarea name="" id="" cols="30" rows="2" placeholder="Message"
+                                    class="form-control rounded-0 bg-transparent border-bottom border-0 border-light"></textarea>
+                            </div>
+                            <div class="mt-3 mb-4 px-md-5 px-3">
+                                <button class="btn btn-primary px-4 fw-semibold" type="submit">SEND</button>
+                            </div>
+    
+    
                         </div>
-                        <div class="mt-3 mb-4 px-md-5 px-3">
-                            <input type="text" placeholder="Name"
-                                class="form-control rounded-0 bg-transparent border-bottom border-0 border-light">
-                        </div>
-                        <div class="mt-3 mb-4 px-md-5 px-3">
-                            <input type="Email" placeholder="Email"
-                                class="form-control rounded-0 bg-transparent border-bottom border-0 border-light">
-                        </div>
-                        <div class="mt-3 mb-4 px-md-5 px-3">
-                            <input type="text" placeholder="Subject"
-                                class="form-control rounded-0 bg-transparent border-bottom border-0 border-light">
-                        </div>
-                        <div class="mt-3 mb-4 px-md-5 px-3">
-                            <textarea name="" id="" cols="30" rows="2" placeholder="Message"
-                                class="form-control rounded-0 bg-transparent border-bottom border-0 border-light"></textarea>
-                        </div>
-                        <div class="mt-3 mb-4 px-md-5 px-3">
-                            <button class="btn btn-primary px-4 fw-semibold" type="submit">SEND</button>
-                        </div>
-
-
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
