@@ -583,6 +583,11 @@ select {
   width: 25%;
 }
 
+@media (min-width:1249px) and (max-width:1399px) {
+  .cartWidth{
+    width: 20%;
+  }
+}
 @media (max-width:768px) {
   .cartWidth{
     width: 100%;
