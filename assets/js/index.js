@@ -7,6 +7,23 @@ $(document).ready(function() {
 });
 // Desktop View navbar active class End
 
+$(document).ready(function() {
+  $(".menDropdownDiv, .dropdownDiv").mouseenter(function() {
+    $(".dropdownDiv").show();
+    $(".dropdownDiv2").hide();
+  });
+  $(".dropdownDiv").mouseleave(function() {
+    $(".dropdownDiv").hide();
+  });
+
+  $(".womenDropdownDiv, .dropdownDiv2").hover(function() {
+    $(".dropdownDiv2").show();
+    $(".dropdownDiv").hide();
+  });
+  $(".dropdownDiv2").mouseleave(function() {
+    $(".dropdownDiv2").hide();
+  });
+});
 // show password js
 function showPass() {
   var passInput = $("#passInput");
@@ -139,7 +156,7 @@ function updateFileName(input) {
 var swiper = new Swiper("#specialists .mySwiper", {
   slidesPerView: 3,
   spaceBetween: 30,
-  freeMode: true, 
+  freeMode: true,
   loop: true,
   autoplay: {
     delay: 1000,
@@ -163,25 +180,26 @@ var swiper = new Swiper("#specialists .mySwiper", {
     992: {
       slidesPerView: 3,
       spaceBetween: 30,
-    },   
-}});
+    },
+  },
+});
 
-
-const dropdownMenu = document.querySelector('#dropdown-menu');
-const selectedItemsDisplay = document.getElementById('multiSelectDropdown');
+const dropdownMenu = document.querySelector("#dropdown-menu");
+const selectedItemsDisplay = document.getElementById("multiSelectDropdown");
 let mySelectedItems = [];
 
 function handleCB(event) {
-    const checkbox = event.target;
-    if (checkbox.checked) {
-        mySelectedItems.push(checkbox.value);
-    } else {
-        mySelectedItems = mySelectedItems.filter((item) => item !== checkbox.value);
-    }
+  const checkbox = event.target;
+  if (checkbox.checked) {
+    mySelectedItems.push(checkbox.value);
+  } else {
+    mySelectedItems = mySelectedItems.filter((item) => item !== checkbox.value);
+  }
 
-    console.log(mySelectedItems);
-    // Update the display of selected items
-    selectedItemsDisplay.textContent = mySelectedItems.length > 0 ? mySelectedItems.join(', ') : '';
+  console.log(mySelectedItems);
+  // Update the display of selected items
+  selectedItemsDisplay.textContent =
+    mySelectedItems.length > 0 ? mySelectedItems.join(", ") : "";
 }
 
-dropdownMenu.addEventListener('change', handleCB);
+dropdownMenu.addEventListener("change", handleCB);

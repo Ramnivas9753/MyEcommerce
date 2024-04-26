@@ -580,7 +580,7 @@ select {
 }
 
 .cartWidth{
-  width: 25%;
+  width: 24%;
 }
 
 @media (min-width:1249px) and (max-width:1399px) {
@@ -607,6 +607,13 @@ select {
   }
 }
 
+a{
+  text-decoration: none !important;
+  color: black;
+}
+a:hover{
+  color: #2fdab8;
+}
 
 
 /* .btn-border:hover,
