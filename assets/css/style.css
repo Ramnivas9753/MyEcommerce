@@ -1208,3 +1208,20 @@ input[type="file"] {
   background-color: #2fdab8;
   border-color: #2fdab8;
 }
+
+.dropdownDiv {
+  top: 100%;
+  left: 42%;
+  z-index: 10;
+}
+
+.dropdownDiv2 {
+  top: 100%;
+  left: 52%;
+  z-index: 10;
+}
+
+.dropdownDiv,
+.dropdownDiv2 {
+  display: none;
+}

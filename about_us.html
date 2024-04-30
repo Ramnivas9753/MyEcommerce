@@ -207,121 +207,290 @@
             </div>
         </div>
         <!-- cartModal End-->
-        <!-- Header Start -->
-        <header>
-    
-            <div class="container-fluid bg-black">
-                <div class="row justify-content-center py-1">
-                    <div class="col-xl-2 col-md col-sm-6 py-1 border-secondary border-0 border-end">
-                        <div class="text-white text-center" data-bs-toggle="modal" href="#SignInModal"
-                            style="cursor: pointer;">
-                            <i class="fa fa-lock text-primary small px-1"></i>
-                            <span class="small">Sign In</span>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-md col-sm-6 py-1 border-secondary border-0 border-end">
-                        <div class="text-white text-center" data-bs-toggle="modal" href="#SignUpModal"
-                            style="cursor: pointer;">
-                            <i class="fa fa-lock text-primary small px-1"></i>
-                            <span class="small">Sign Up</span>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-md col-sm-6 py-1 border-secondary border-0 border-end">
-                        <div class="text-white text-center">
-                            <i class="fa fa-phone text-primary small px-1"></i>
-                            <span class="small">Call : 01234567898</span>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-md col-sm-6 py-1 border-secondary border-0 border-end">
-                        <div class="text-white text-center">
-                            <i class="fa fa-envelope text-primary small px-1"></i>
-                            <span class="small">info@example.com</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div>
-                <div class="container-fluid bg-light py-2 py-md-3">
-                    <div class="row align-items-center justify-content-around gy-3">
-                        <div class="d-flex gap-1 col-md-4 ">
-                            <input type="text" placeholder="Search Here.."
-                                class="form-control border-secondary-subtle rounded-0">
-                            <a href="#" class="btn btn-dark">
-                                <i class="fa fa-search fw-bold"></i>
-                            </a>
-                        </div>
-                        <div class="col-md-3 text-center ">
-                            <!-- Logo -->
-                            <img src="assets/images/Bharat_gyan_logo.png" alt="Logo" height="50" class="me-2">
-                            <!-- <img src="assets/images/Bharat_gyan_logo.png" alt="" class="me-2 "> -->
-                            <strong class="logo_text text-dark">SK <strong class="text-primary">SINGH</strong></strong></a>
-                        </div>
-                        <div
-                            class="col-md-3 text-right justify-content-center d-flex gap-xl-3 gap-2 gap-md-1 align-items-md-center">
-                            <!-- Social Media Icons -->
-                            <p class="m-0 text-white d-xxl-flex d-none">Share On :</p>
-                            <a href="#" class="text-white px-2 py-1" style="background: #3b5998;"><i
-                                    class="fab fa-facebook-f px-1"></i></a>
-                            <a href="#" class="text-white px-2 py-1" style="background:#1DA1F2;"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a href="#" class="text-white px-2 py-1" style="background:#DD2A7B;"><i
-                                    class="fab fa-instagram"></i></a>
-                            <a href="#" class="text-white px-2 py-1" style="background:#0077b5;"><i
-                                    class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <nav class="navbar navbar-expand-lg navbar-light desktop_nav py-0" style="background:black;">
-                <div class="container-xl px-xl-0 px-xl-4 px-md-4">
+        <!-- Mobile View offcanvas -->
+    <div class="offcanvas offcanvas-start d-lg-none overflow-auto overflow-y-auto"
+    style="z-index: 1000000; min-height: 100vh; width: auto; max-width: 500px;" data-bs-scroll="true"
+    data-bs-backdrop="false" tabindex="-1" id="offcanvas-nav" aria-labelledby="offcanvas-navLabel">
+    <div class="offcanvas-header nav-bg position-sticky top-0"
+        style="background-image:url('assets/image/nav-banner.png');background-size: 100% 100% !important; background-repeat: no-repeat; background-position: center;">
+        <div class="">
+            <a href="index.html" class="d-flex flex-row gap-1 gap-sm-2 gap-lg-3">
+                <img src="assets/icon/CAPITAL HOSPITAL LOGO FINAL 1.png" class="nav-logo" alt="" />
+                <div class="d-flex flex-column justify-content-center">
                     <a class="navbar-brand d-flex align-items-center h4 fw-bold logo_img" href="index.html">
                         <img src="assets/images/Bharat_gyan_logo.png" alt="" class="me-3 ">
-                        <strong class="logo_text text-white">SK <span class="text-primary">Ecommerce</span></strong></a>
-                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav w-100 mb-2 justify-content-end mb-lg-0 d-flex align-items-center gap-3">
-                            <li class="nav-item p-2">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item p-2">
-                                <a class="nav-link" href="about_us.html">About us</a>
-                            </li>
-                            <li class="nav-item p-2 dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Men`s wear
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="photo_gallery.html">Photo Gallery</a></li>
-                                    <li><a class="dropdown-item" href="video_gallery.html">Video Gallery</a></li>
-                                </ul>
-                            </li>
-    
-                            <li class="nav-item p-2">
-                                <a class="nav-link " aria-current="page" href="event.html">Women`s wear</a>
-                            </li>
-                            <li class="nav-item p-2">
-                                <a class="nav-link " aria-current="page" href="contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item btn cartWidth my-0" data-bs-toggle="modal" href="#cartModl">
-                                <a class="nav-link " aria-current="page">
-                                    <i class="fa fa-cart-arrow-down fs-5 p-2 text-black bg-opacity-50"
-                                        style="background: #17c3a2;"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                        <strong class="logo_text ">SK <span class="text-primary">Ecommerce</span></strong></a>
+                </div>
+            </a>
+        </div>
+        <button type="button" class="btn-close text-reset fw-bold" style="opacity: 0.9;" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body pt-0 px-0">
+        <div class="row gy-2">
+
+            <div class="col-12 px-4" style="border-bottom:1px solid #C2C2C2;">
+                <a href="index.html" class="gap-3 d-flex align-items-center">
+                    <i class="text-primary fa fa-home" style="height: 15px;"></i>
+                    <p class="m-0 fw-bold d-flex gap-3">Home</p>
+                </a>
+            </div>
+
+            <div class="col-12 px-4" style="border-bottom:1px solid #C2C2C2;">
+                <a href="about_us.html" class="gap-3 d-flex align-items-center">
+                    <i class="text-primary fa fa-exclamation-circle" style="height: 15px;"></i>
+                    <p class="m-0 fw-bold d-flex gap-3">About Us</p>
+                </a>
+            </div>
+
+
+
+            <div class="col-12 px-4 main-dropdown" style="border-bottom:1px solid #C2C2C2;">
+                <a href="mens-product.html" class="gap-3 d-flex align-items-center">
+                    <i class="text-primary fas fa-user-tie" style="height: 15px;"></i>
+                    <p class="m-0 fw-bold d-flex gap-3">Men's Wear</p>
+                </a>
+            </div>
+
+            <div class="col-12 px-4 main-dropdown" style="border-bottom:1px solid #C2C2C2;">
+                <a href="womens-product.html" class="gap-3 d-flex align-items-center">
+                    <i class="text-primary fas fa-tshirt" style="height: 15px;"></i>
+                    <p class="m-0 fw-bold d-flex gap-3">Women's Wear</p>
+                </a>
+            </div>
+
+            <div class="col-12 px-4 main-dropdown" style="border-bottom:1px solid #C2C2C2;">
+                <a href="contact.html" class="gap-3 d-flex align-items-center">
+                    <i class="text-primary fa fa-phone-square" style="height: 15px;"></i>
+                    <p class="m-0 fw-bold d-flex gap-3">Contact Us</p>
+                </a>
+            </div>
+
+            <div class="col-12 px-4 btn " style="border-bottom:1px solid #C2C2C2;" data-bs-toggle="modal"
+                href="#cartModl">
+                <a class="nav-link " aria-current="page">
+                    <i class="fa fa-cart-arrow-down fs-5 p-2 text-black bg-opacity-50"
+                        style="background: #17c3a2;"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <img class="position-absolute bottom-0" src="assets/nav-icon/nav-fotter-img.png" alt="">
+</div>
+<!-- Mobile View offcanvasend -->
+
+<!-- Header Start -->
+<header class="position-relative">
+
+    <div class="container-fluid bg-black">
+        <div class="row justify-content-center py-1">
+            <div class="col-xl-2 col-md col-sm-6 py-1 border-secondary border-0 border-end">
+                <div class="text-white text-center" data-bs-toggle="modal" href="#SignInModal"
+                    style="cursor: pointer;">
+                    <i class="fa fa-lock text-primary small px-1"></i>
+                    <span class="small">Sign In</span>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md col-sm-6 py-1 border-secondary border-0 border-end">
+                <div class="text-white text-center" data-bs-toggle="modal" href="#SignUpModal"
+                    style="cursor: pointer;">
+                    <i class="fa fa-lock text-primary small px-1"></i>
+                    <span class="small">Sign Up</span>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md col-sm-6 py-1 border-secondary border-0 border-end">
+                <div class="text-white text-center">
+                    <i class="fa fa-phone text-primary small px-1"></i>
+                    <span class="small">Call : 01234567898</span>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md col-sm-6 py-1 border-secondary border-0 border-end">
+                <div class="text-white text-center">
+                    <i class="fa fa-envelope text-primary small px-1"></i>
+                    <span class="small">info@example.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container-fluid bg-light py-2 py-md-3">
+            <div class="row align-items-center justify-content-around gy-3">
+                <div class="d-flex gap-1 col-md-4 ">
+                    <input type="text" placeholder="Search Here.."
+                        class="form-control border-secondary-subtle rounded-0">
+                    <a href="#" class="btn btn-dark">
+                        <i class="fa fa-search fw-bold"></i>
+                    </a>
+                </div>
+                <div class="col-md-3 text-center ">
+                    <!-- Logo -->
+                    <a href="index.html">
+                        <img src="assets/images/Bharat_gyan_logo.png" alt="Logo" height="50" class="me-2">
+                        <strong class="logo_text text-dark">SK <strong class="text-primary">SINGH</strong></strong>
+                    </a>
+                </div>
+                <div
+                    class="col-md-3 text-right justify-content-center d-flex gap-xl-3 gap-2 gap-md-1 align-items-md-center">
+                    <!-- Social Media Icons -->
+                    <p class="m-0 text-white d-xxl-flex d-none">Share On :</p>
+                    <a href="#" class="text-white px-2 py-1" style="background: #3b5998;"><i
+                            class="fab fa-facebook-f px-1"></i></a>
+                    <a href="#" class="text-white px-2 py-1" style="background:#1DA1F2;"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white px-2 py-1" style="background:#DD2A7B;"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white px-2 py-1" style="background:#0077b5;"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light desktop_nav py-0" style="background:black;">
+        <div class="container-xl px-xl-0 px-xl-4 px-md-4">
+            <a class="navbar-brand d-flex align-items-center h4 fw-bold logo_img" href="index.html">
+                <img src="assets/images/Bharat_gyan_logo.png" alt="" class="me-3 ">
+                <strong class="logo_text text-white">SK <span class="text-primary">Ecommerce</span></strong></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 mb-2 justify-content-around mb-lg-0 d-flex align-items-center gap-3">
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="about_us.html">About us</a>
+                    </li>
+
+                    <li class="nav-item p-2 menDropdownDiv d-flex align-items-center dropdown-toggle text-light">
+                        <a class="nav-link" aria-current="page">Men`s wear</a>
+                    </li>
+                    <li class="nav-item p-2 womenDropdownDiv d-flex align-items-center dropdown-toggle text-light">
+                        <a class="nav-link">Women`s
+                            wear</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link " aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item btn cartWidth my-0" data-bs-toggle="modal" href="#cartModl">
+                        <a class="nav-link " aria-current="page">
+                            <i class="fa fa-cart-arrow-down fs-5 p-2 text-black bg-opacity-50"
+                                style="background: #17c3a2;"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="dropdownDiv position-absolute">
+        <div class="row">
+            <div
+                class="col-xl-4 col-lg-4 bg-light p-3 text-center d-flex justify-content-center align-items-center">
+                <img src="assets/images/watch.jpg" alt="" class="rounded" style="width:100%; aspect-ratio: 2/2;">
+            </div>
+            <div class="col-xl-5 col-lg-6  bg-light p-3">
+                <div class="row gy-2">
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <!-- Header End -->
+            </div>
+        </div>
+    </div>
+    <div class="dropdownDiv2 position-absolute ">
+        <div class="row w-100">
+            <div class="col-xl-6 col-lg-7  bg-light p-3">
+                <div class="row gy-2">
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="m-0">Product Name</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="col-xl-5 col-lg-4 bg-light p-3 text-center d-flex justify-content-center align-items-center">
+                <img src="assets/images/watch.jpg" alt="" class="rounded" style="width:100%; aspect-ratio: 2/2;">
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header End -->
 
     <!-- commanBanner section    -->
     <section class="">
